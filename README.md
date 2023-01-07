@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![seamonster](https://user-images.githubusercontent.com/72578270/211139912-0db9cc84-c305-4864-a27d-3c376da906c6.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with Kap  
