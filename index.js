@@ -57,7 +57,7 @@ function addGamesToPage(games) {
     }
 
 }
-// addGamesToPage(GAMES_JSON);
+addGamesToPage(GAMES_JSON);
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
 
@@ -210,13 +210,7 @@ h2_sec.textContent = SecGame.name;
 secondGameContainer.append(h2_sec);
 
 
-// The website is relativley sparse at the moment. Take a momemnt to consider what features you think would help the site stand out more? Take a moment to sketch out some improvements to the site, whether they are to its look and feel or to its functionality. Some examples may include:
-
-// What if a user discovers the site and wants to search for a specific game they have heard of?
-// What if a user wants to use the nav bar at the top of the page to get to the Our Game section quickly?
-// How would you update the CSS of the site to make it more visually appealing?
-// Can you implement any of these features? You've got all the skills you need to make big upgrades to Sea Monster Crowdfunding's landing page. Give it a try! See if you can implement one bonus feature to the site.
-
+//add searchbar
 const searchInput = document.getElementById("search-input");
 
 function searchGame(value){
