@@ -11,11 +11,21 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-around;
     background-color: lightblue;
     padding: 1%;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    border-radius: 10ch;
+}
+
+.header a{
+    text-decoration: none; 
+}
+#games-tab {
+    align-items:flex-end;
+
 }
 
 .stats-container {
@@ -66,11 +76,15 @@ body {
     box-shadow: 0 0 30px lightblue;
 }
 
+
+
+
+
 #button-container {
     text-align: center;
 }
 
-button {
+.button-container button {
     font-family: 'Cabin';
     border: none;
     padding: 1%;

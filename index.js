@@ -199,7 +199,40 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
-
+let [TopGame, SecGame, ...other] = sortedGames;
 // create a new element to hold the name of the top pledge game, then append it to the correct element
-
+let h2 = document.createElement("h2");
+h2.textContent = TopGame.name;
+firstGameContainer.append(h2);
 // do the same for the runner up item
+let h2_sec = document.createElement("h2");
+h2_sec.textContent = SecGame.name;
+secondGameContainer.append(h2_sec);
+
+
+// The website is relativley sparse at the moment. Take a momemnt to consider what features you think would help the site stand out more? Take a moment to sketch out some improvements to the site, whether they are to its look and feel or to its functionality. Some examples may include:
+
+// What if a user discovers the site and wants to search for a specific game they have heard of?
+// What if a user wants to use the nav bar at the top of the page to get to the Our Game section quickly?
+// How would you update the CSS of the site to make it more visually appealing?
+// Can you implement any of these features? You've got all the skills you need to make big upgrades to Sea Monster Crowdfunding's landing page. Give it a try! See if you can implement one bonus feature to the site.
+
+const searchInput = document.getElementById("search-input");
+
+function searchGame(value){
+    deleteChildElements(gamesContainer);
+    console.log(value);
+    var result = [];
+    for (let i = 0; i < GAMES_JSON.length; i++){
+        if (GAMES_JSON[i].name.toLowerCase().includes(value)){
+            result.push(GAMES_JSON[i]);
+        }
+    }
+    addGamesToPage(result)
+}
+
+searchInput.addEventListener("input", (event)=>{
+    
+    let value = event.target.value;
+    searchGame(value.toLowerCase());
+})
